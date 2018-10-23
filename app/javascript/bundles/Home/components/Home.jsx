@@ -1,45 +1,63 @@
-import PropTypes from 'prop-types';
-import React from 'react';
+import React from 'react'
+import Base from 'terra-base'
+import {IntlProvider, InjectIntl, FormattedMessage} from 'react-intl'
+import ActionHeader from 'terra-action-header/lib/ActionHeader'
+import Button from 'terra-button/lib/Button'
+import Textarea from 'terra-form-textarea'
 
-export default class Home extends React.Component {
-    static propTypes = {
-        name: PropTypes.string.isRequired, // this is passed from the Rails view
-    };
-
-    /**
-     * @param props - Comes from your rails view.
-     */
+class Home extends React.Component {
     constructor(props) {
         super(props);
 
-        // How to set initial state in ES6 class syntax
-        // https://reactjs.org/docs/state-and-lifecycle.html#adding-local-state-to-a-class
-        this.state = { name: this.props.name };
+        // define initial state
+        const locale = props.locale || defaultLocale;
+        this.state = {
+            areTranslationsLoaded: false,
+            locale,
+            messages: translations[locale],
+        };
+
+        // bind custom methods to have same "this" as the react built-in methods, the current instance of this component
+        Object.getOwnPropertyNames(BareFooter.prototype).forEach((method) => {
+            this[method] = this[method].bind(this);
+        });
     }
 
-    updateName = (name) => {
-        this.setState({ name });
-    };
+    componentWillMount() {
+        // make sure the asynchronous setState rerun after initial rendering
+        i18nLoader(this.props.locale, this.setState, this);
+    }
 
     render() {
         return (
             <div>
-                <h3>
-                    Hello, {this.state.name}!
-                </h3>
-                <hr />
-                <form >
-                    <label htmlFor="name">
-                        Say hello to:
-                    </label>
-                    <input
-                        id="name"
-                        type="text"
-                        value={this.state.name}
-                        onChange={(e) => this.updateName(e.target.value)}
-                    />
-                </form>
+            <IntlProvider locale={this.props.locale} messages={this.state.messages} >
+                <Base>
+                    <br />
+                    <ActionHeader title="SQL Query Tool"/>
+                    <br />
+                    <Home/>
+                    <ButtonVariant/>
+                </Base>
+            </IntlProvider>
             </div>
         );
     }
 }
+const buttonStyle = {margin: '5px'};
+
+const ButtonVariant = () => (
+    <div>
+        <br/>
+        <h3>Enter the SQL Query Below:</h3>
+        <br/>
+        <Textarea name="query" style={{height: 200, width: 600}} />
+        <br/>
+        <Button text="RUN" variant="emphasis" name="runquery" onclick={() =>
+            <h1>Query Executed</h1>
+        } style={buttonStyle}/>
+    </div>
+
+);
+
+export default Home;

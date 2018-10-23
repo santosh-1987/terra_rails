@@ -23,7 +23,7 @@ ReactOnRails.configure do |config|
   # to automatically refresh your webpack assets on every test run.
   #
   config.build_test_command = "RAILS_ENV=test bin/webpack"
-
+  # config.i18n_dir = Rails.root.join("translations")
   ################################################################################
   ################################################################################
   # SERVER RENDERING OPTIONS
