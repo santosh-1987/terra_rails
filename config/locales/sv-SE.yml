@@ -1,0 +1,301 @@
+---
+sv-SE:
+  action: Åtgärd
+  actions: Åtgärd
+  autocomplete:
+    error_message: Ett problem uppstod vid ändring av användarkonfigurationen
+    help: Visas som en lista över frågenyckelord medan du skriver.
+    label: Komplettera automatiskt medan du skriver
+  add: Lägg till
+  alert: Uppmärksamhetssignal/Varning
+  all: Alla
+  async_query_execution:
+    help_text: Med detta alternativ kan det ta längre tid att hämta frågeresultat, men frågor kan köras i upp till 10 minuter.
+    label: Utökad körning
+  branding:
+    analytics: Analytics
+    cerner: Cerner
+    copyright: Copyright © 2018 Cerner Corporation. Användning regleras i avtalet med Cerner Corporation.
+    healthe: Healthe
+    intent: Intent
+    powered_by: Använder
+    sm: SM
+  cancel: Avbryt
+  collections:
+    add: Lägg till i en befintlig samling
+    add_collection: Lägg till samling
+    clone: Klona samling
+    create: Skapa en ny samling
+    edit: Redigera samling
+    delete: Ta bort samling
+    delete_confirmation: Ta bort samlingen och alla frågor permanent?
+    group: Grupp
+    modal_heading: 'Utforska öppna samlingar'
+    new: Ny samling
+    no_collections_available: Inga samlingar tillgängliga
+    no_collections_message: Det finns inga samlingar. Klicka på Ny för att skapa en ny samling.
+    no_shared_collection_message: Ingen samling delas med dig.
+    previous: Tidigare
+    public_collection: Öppen samling
+    roles: Roll
+    share: Dela samling
+    shared:
+      select_role: Välj roll
+      select_group: Välj grupp
+      select_user: Välj användare
+      roles:
+        can_edit: Kan redigera
+        can_view: Kan visa
+    tab_heading: Samlingar
+    user: Användare
+  create: Skapa
+  delete: Ta bort
+  description: Beskrivning
+  can: Kan %{role}
+  clone: Klona
+  collapse_all: Dölj alla
+  edit: Ändra
+  edit_details: Redigera information
+  errors:
+    authentication:
+      back: Tillbaka
+      header: Åtkomst nekad
+      message: Du är inte behörig att utföra denna åtgärd. Kontakta systemadministratören för att få behörighet.
+    authorization:
+      header: Åtkomst nekad
+      message: Du är inte behörig att utföra denna åtgärd. Kontakta systemadministratören för att få behörighet.
+    bad_request:
+      header: Felaktig begäran
+      message: Din begäran kunde inte hanteras vid denna tidpunkt.
+    default:
+      header: Internt fel
+      message: Din begäran kunde inte hanteras vid denna tidpunkt.
+    forbidden_request:
+      header: Otillåten begäran
+      message: Din begäran kunde inte hanteras vid denna tidpunkt.
+    internal_server_error:
+      header: Internt fel
+      message: Din begäran kunde inte hanteras vid denna tidpunkt.
+    page_not_found:
+      header: Sidan hittades inte
+      message: Sidan du försöker få åtkomst till finns inte.
+    resource_not_found:
+      header: Resursen hittades inte
+      message: Resursen du försöker få åtkomst till finns inte.
+    unsupported_format:
+      header: Formatet stöds inte
+      message: Din begäran kunde inte hanteras vid denna tidpunkt.
+    user_not_found:
+      header: Användaren hittades inte
+      message: Användaren du försöker få åtkomst till finns inte.
+  executing_query: Kör fråga…
+  expand_all: Visa alla
+  explore: Utforska
+  export: Exportera
+  help: Hjälp
+  history:
+    remove_all: Ta bort all frågehistorik
+    remove_confirmation: Ta bort all frågehistorik?
+    remove_group: 'Ta bort frågehistorik för %{date}'
+    remove_group_confirmation: 'Ta bort all frågehistorik för %{date}?'
+    remove_query: Ta bort fråga från historik
+    remove_query_confirmation: Ta bort frågan från historiken?
+    tab_heading: Historik
+  keyboard_shortcuts_modal:
+    action_close_tab: Stäng aktuell frågeflik
+    action_find_next_editor: Sök efter nästa matchning i frågeredigeraren
+    action_find_previous_editor: Sök efter föregående matchning i frågeredigeraren
+    action_replace_editor: Ersätt i frågeredigeraren
+    action_replace_all_editor: Ersätt allt i frågeredigeraren
+    action_open_tab: Öppna en ny frågeflik och gå till den
+    action_run_query: Kör aktuell fråga
+    action_save_query: Spara aktuell fråga
+    action_search_editor: Sök i frågeredigeraren
+    action_switch_tab_left: Gå till frågefliken till vänster
+    action_switch_tab_right: Gå till frågefliken till höger
+    heading: Tangentbordsgenvägar
+    macos_close_tab: ⌘ + Option + w
+    macos_find_next_editor: ⌘ + g
+    macos_find_previous_editor: Shift + ⌘ + g
+    macos_open_tab: ⌘ + Option + t
+    macos_replace_editor: ⌘ + Option + f
+    macos_replace_all_editor: Shift + ⌘ + Option + f
+    macos_run_query: ⌘ + Enter
+    macos_save_query: ⌘ + Option + s
+    macos_search_editor: ⌘ + f
+    macos_switch_tab_left: ⌘ + Option + [
+    macos_switch_tab_right: ⌘ + Option + ]
+    windows_close_tab: Ctrl + Alt + w
+    windows_find_previous_editor: Shift + Ctrl + g
+    windows_find_next_editor: Ctrl + g
+    windows_open_tab: Ctrl + Alt + t
+    windows_replace_editor: Shift + Ctrl + f
+    windows_replace_all_editor: Shift + Ctrl + r
+    windows_run_query: Ctrl + Enter
+    windows_save_query: Ctrl + Alt + s
+    windows_search_editor: Ctrl + f
+    windows_switch_tab_left: Ctrl + Alt + [
+    windows_switch_tab_right: Ctrl + Alt + ]
+  layouts:
+    application:
+      administration: Administration
+      data_models: Datamodeller
+      data_sets: Datauppsättningar
+      directionality: ltr
+      projects: Projekt
+      queries: Frågor
+  limit_to: Begränsa till
+  macos: MacOS
+  maximize: Maximera
+  messages:
+    collections:
+      error_delete: 'Kunde inte ta bort samlingen: %{message}.'
+      error_clone: 'Kunde inte duplicera samlingen: %{message}.'
+      error_create: 'Kunde inte skapa samlingen: %{message}.'
+      error_edit: 'Kunde inte redigera samlingen: %{message}.'
+      error_retrieve_collection: 'Kunde inte hämta delade samlingar: %{message}.'
+      error_save: 'Kunde inte spara samlingen: %{message}.'
+      error_share: 'Kunde inte dela samlingen: %{message}.'
+      success_clone: Samlingen klonades.
+      success_create: Samlingen skapades.
+      success_delete: Samlingen togs bort.
+      success_edit: Samlingen redigerades.
+      success_save: Samlingen sparades.
+      success_share: Samlingen delades.
+    queries:
+      error_delete: 'Kunde inte ta bort frågan: %{message}.'
+      error_clone: 'Kunde inte duplicera frågan: %{message}.'
+      error_edit: 'Kunde inte redigera frågan: %{message}.'
+      error_move: 'Kunde inte flytta frågan: %{message}.'
+      error_remove: 'Kunde inte ta bort frågan: %{message}.'
+      error_remove_all: 'Kunde inte ta bort frågorna: %{message}.'
+      error_remove_all: 'Kunde inte ta bort frågorna: %{message}.'
+      error_save: 'Kunde inte spara frågan: %{message}.'
+      no_queries: 'Inga frågor hittades'
+      success_clone: Frågan klonades.
+      success_delete: Frågan togs bort.
+      success_edit: Frågan redigerades.
+      success_move: Frågan flyttades.
+      success_remove: Frågan togs bort.
+      success_remove_all: Frågorna togs bort.
+      success_save: Frågan sparades.
+  mine: Utvinn
+  minimize: Minimera
+  move: Flytta
+  name: Namn
+  new: Ny
+  'no': 'Nej'
+  no_results_found: Inga resultat hittades.
+  no_query_history: Ingen frågehistorik.
+  open_all: Öppna alla
+  open_in_new_tab: Öppna i ny flik
+  pinned_entities:
+    error_message: Fel vid inläsning av fästa enheter
+  preview: Förhandsgranska
+  public: Offentlig
+  public_collections:
+    error_message: Fel vid inläsning av öppna samlingar
+    help: Detta gör samlingen synlig för alla användare
+    no_public_collections: Inga öppna samlingar hittades.
+  remove: Ta bort
+  remove_all: Ta bort alla
+  save: Spara
+  save_as: Spara som
+  save_as_new_data_set:
+    data_set_created_with_query: 'Datauppsättning skapades. <a href=%{path}>Klicka här</a> för att visa datauppsättning.'
+    data_set_description_error: Ange en datauppsättningsbeskrivning med max 2 000 tecken.
+    data_set_description: Beskrivning av datauppsättning
+    data_set_mnemonic_length_error: Ange en datauppsättningsteckenkod med max 32 tecken.
+    data_set_mnemonic_non_length_error: Datauppsättningsteckenkoden får bara bestå av alfanumeriska tecken och understreck, och får inte börja med en siffra.
+    data_set_mnemonic: Datauppsättningens teckenkod
+    data_set_mnemonic_unique_error: Datauppsättningsteckenkoden måste vara unik.
+    data_set_name_error: Ange ett datauppsättningsnamn med max 255 tecken.
+    data_set_name: Namn på datauppsättning
+    error: Ett problem uppstod när datauppsättningen skapades.
+    insert_update_info_html: Alternativet <strong>Infoga/Uppdatera</strong> tillämpar logik som tillåter att rader i en befintlig datauppsättning uppdateras. Logiken är beroende av primärnyckelfält. Rader med primärnycklar som redan finns i datauppsättningen uppdaterar den befintliga raden. Rader med primärnycklar som inte redan finns i datauppsättningen måste infogas.
+    insert_update_message: Alternativet <strong>Infoga/Uppdatera</strong> kräver att primärnycklar definieras i datauppsättningen och finns tillgängliga.
+    insert_update: Infoga/uppdatera
+    menu_title: Spara som ny datauppsättning
+    modal_heading: Skapa ny datauppsättning från frågor
+    required_field: Obligatoriska fält får inte vara tomma.
+    source_query: Källfråga
+    target_data_set_description_info_html: <strong>Datauppsättningsbeskrivning:</strong>En detaljerad beskrivning av data i datauppsättningen som ska skapas. Beskrivningen visas främst i dokumentationen och används inte i Vertica.
+    target_data_set_mnemonic_info_html: <strong>Datauppsättningsteckenkod:</strong> En identifierare i form av ett enda ord för datauppsättningen som ska skapas. Teckenkoden används vid sökning i denna datauppsättning inom Vertica. Observera att värdet inte får innehålla blanksteg, inte får börja med en siffra, och inte får överstiga 32 tecken.
+    target_data_set_name_info_html: <strong>Datauppsättningsnamn:</strong> Ett mer lättförståeligt namn för att identifiera datauppsättningen som ska skapas. Namnet visas främst i dokumentationen och används inte i Vertica. Observera att detta värde inte får överstiga 255 tecken.
+    target_data_set: Måldatauppsättning
+  schemas:
+    error_message: Fel vid inläsning av schema
+  search: Sök
+  settings: Inställningar
+  share: Dela
+  shared: Delad
+  success: Klar
+  today: I dag
+  query_tab_number: Fråga %{tab_number}
+  queries:
+    edit: Redigera sparad fråga
+    delete: Ta bort fråga
+    delete_confirmation: Är du säker på att du vill radera denna sparade fråga?
+    delete_error_message: Ett problem uppstod vid borttagning
+    clone: Klona fråga
+    empty: Frågan får inte vara tom
+    execute_error_message: Ett problem uppstod vid körning av fråga
+    move: Flytta fråga
+    results:
+      copy: Kopiera
+      copy_ie: Webbläsaren stödjer inte kopiering av frågeresultat.
+      error_message: 'Kunde inte köra frågan: %{error_message}'
+      maximum: '%{max_results} rader slutförda på %{execution_time} sekunder.\n        Fler än %{max_results} rader tillgängliga, visar endast %{max_results}.'
+      no_rows: Inga resultat hittades
+      rows: '%{count} rader slutförda på %{execution_time} sekunder.'
+    save: Spara fråga
+    update_success: '%{name} uppdaterades'
+  query_collections:
+    create_error_message: Ett problem uppstod vid skapandet av frågesamling
+    clone_error_message: Ett problem uppstod vid kloningen av frågesamling
+    update_error_message: Ett problem uppstod vid uppdatering av frågesamling
+    destroy_error_message: Ett problem uppstod vid borttagning av frågesamling
+  saved_queries:
+    create_error_message: Ett problem uppstod vid skapandet av sparad fråga
+    move_error_message: Ett problem uppstod vid flytt av sparad fråga
+    update_error_message: Ett problem uppstod vid uppdatering av sparad fråga
+    destroy_error_message: Ett problem uppstod vid borttagning av sparad fråga
+  shared_query_collections:
+    fetch_error_message: Ett problem uppstod vid hämtning av delade samlingar
+    create_error_message: Ett problem uppstod vid skapandet av delad samling
+  query_input_bar:
+    run_query: Kör fråga
+  query_output_bar:
+    jump_to_column:
+      placeholder: Hoppa till spalt
+  run: Kör
+  user:
+    sign_out: Logga ut
+  windows: Fönster
+  'yes': 'Ja'
+  yesterday: I går
+  navigator:
+    tab_heading: Navigatör
+    pinned_section:
+      title: fäst
+      empty: Inga fästa tabeller hittades
+    search:
+      placeholder: Sök
+    entities:
+      display_fields: Visningsfält
+      empty: Inga tabeller hittades
+  Terra:
+    Overlay:
+      loading: Läser in …
+    actionHeader:
+      close: Close
+    searchField:
+      search: Sök
+    Clinical:
+      ActionHeader:
+        back: Tillbaka
+        close: Stäng
+        maximize: Maximera
+        minimize: Minimera
+        next: Nästa
+        previous: Föregående

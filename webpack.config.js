@@ -43,7 +43,13 @@ const config = {
 
     resolve: {
         extensions: ['.js', '.jsx'],
-        modules: [path.resolve(__dirname, 'aggregated-translations'), 'node_modules']
+        modules: [path.resolve(__dirname, 'aggregated-translations'), 'node_modules'],
+        alias: {
+            react: path.resolve(__dirname, 'node_modules', 'react'),
+            'react-on-rails': path.resolve(__dirname, 'node_modules', 'react-on-rails'),
+            'react-intl': path.resolve(__dirname, 'node_modules/react-intl'),
+            'react-dom': path.resolve(__dirname, 'node_modules/react-dom'),
+        },
     },
     plugins: [
         new webpack.EnvironmentPlugin({

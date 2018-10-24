@@ -1,6 +1,6 @@
 import React from 'react'
 import Base from 'terra-base'
-import {IntlProvider, InjectIntl, FormattedMessage} from 'react-intl'
+import { I18nProvider, i18nLoader } from 'terra-i18n';
 import ActionHeader from 'terra-action-header/lib/ActionHeader'
 import Button from 'terra-button/lib/Button'
 import Textarea from 'terra-form-textarea'
@@ -8,39 +8,34 @@ import Textarea from 'terra-form-textarea'
 class Home extends React.Component {
     constructor(props) {
         super(props);
-
-        // define initial state
-        const locale = props.locale || defaultLocale;
         this.state = {
             areTranslationsLoaded: false,
-            locale,
-            messages: translations[locale],
+            locale: 'en-US',
+            messages: {},
         };
-
-        // bind custom methods to have same "this" as the react built-in methods, the current instance of this component
-        Object.getOwnPropertyNames(BareFooter.prototype).forEach((method) => {
-            this[method] = this[method].bind(this);
-        });
     }
 
     componentWillMount() {
         // make sure the asynchronous setState rerun after initial rendering
-        i18nLoader(this.props.locale, this.setState, this);
+        i18nLoader('en-US', this.setState, this);
     }
 
     render() {
+        // Do not render components or the provider until translations and locale
+        // data are loaded.
+        if (!this.state.areTranslationsLoaded) {
+            return null;
+        }
+
         return (
-            <div>
-            <IntlProvider locale={this.props.locale} messages={this.state.messages} >
+            <I18nProvider locale={this.state.locale} messages={this.state.messages}>
                 <Base>
                     <br />
                     <ActionHeader title="SQL Query Tool"/>
                     <br />
-                    <Home/>
                     <ButtonVariant/>
                 </Base>
-            </IntlProvider>
-            </div>
+            </I18nProvider>
         );
     }
 }
@@ -53,7 +48,7 @@ const ButtonVariant = () => (
         <br/>
         <Textarea name="query" style={{height: 200, width: 600}} />
         <br/>
-        <Button text="RUN" variant="emphasis" name="runquery" onclick={() =>
+        <Button text="RUN" variant="emphasis" name="runquery" onClick={() =>
             <h1>Query Executed</h1>
         } style={buttonStyle}/>
     </div>
