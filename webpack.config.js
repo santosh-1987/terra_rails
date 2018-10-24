@@ -152,7 +152,7 @@ const aggregateTranslations = require('terra-i18n/scripts/aggregate-translations
 
 const aggregateOptions = {
     baseDir: __dirname,
-    directories: ['./translations'],
+    directories: ['./app/javascript/i18n'],
     locales: ['en-US', 'en-GB', 'fi-FI', 'sv-SE'],
     outputDir: './aggregated-translations',
 };
