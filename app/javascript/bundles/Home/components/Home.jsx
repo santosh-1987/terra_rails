@@ -10,14 +10,14 @@ class Home extends React.Component {
         super(props);
         this.state = {
             areTranslationsLoaded: false,
-            locale: 'en-US',
+            locale: props.locale,
             messages: {},
         };
     }
 
     componentWillMount() {
         // make sure the asynchronous setState rerun after initial rendering
-        i18nLoader('en-US', this.setState, this);
+        i18nLoader(this.state.locale, this.setState, this);
     }
 
     render() {
