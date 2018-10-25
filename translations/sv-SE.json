@@ -1,0 +1,13 @@
+{
+  "action": "Åtgärd",
+  "actions": "Åtgärd",
+  "Terra.Overlay.loading": "Läser in …",
+  "Terra.actionHeader.close": "Close",
+  "Terra.searchField.search": "Sök",
+  "Terra.Clinical.ActionHeader.back": "Tillbaka",
+  "Terra.Clinical.ActionHeader.close": "Stäng",
+  "Terra.Clinical.ActionHeader.maximize": "Maximera",
+  "Terra.Clinical.ActionHeader.minimize": "Minimera",
+  "Terra.Clinical.ActionHeader.next": "Nästa",
+  "Terra.Clinical.ActionHeader.previous": "Föregående"
+}

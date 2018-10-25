@@ -43,13 +43,7 @@ const config = {
 
     resolve: {
         extensions: ['.js', '.jsx'],
-        modules: [path.resolve(__dirname, 'aggregated-translations'), 'node_modules'],
-        alias: {
-            react: path.resolve(__dirname, 'node_modules', 'react'),
-            'react-on-rails': path.resolve(__dirname, 'node_modules', 'react-on-rails'),
-            'react-intl': path.resolve(__dirname, 'node_modules/react-intl'),
-            'react-dom': path.resolve(__dirname, 'node_modules/react-dom'),
-        },
+        modules: [path.resolve(__dirname, 'aggregated-translations'), 'node_modules']
     },
     plugins: [
         new webpack.EnvironmentPlugin({
@@ -152,7 +146,7 @@ const aggregateTranslations = require('terra-i18n/scripts/aggregate-translations
 
 const aggregateOptions = {
     baseDir: __dirname,
-    directories: ['./app/javascript/i18n'],
+    directories: ['./translations'],
     locales: ['en-US', 'en-GB', 'fi-FI', 'sv-SE'],
     outputDir: './aggregated-translations',
 };

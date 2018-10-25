@@ -3526,6 +3526,17 @@ highlight.js@~9.12.0:
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.12.0.tgz#e6d9dbe57cbefe60751f02af336195870c90c01e"
   integrity sha1-5tnb5Xy+/mB1HwKvM2GVhwyQwB4=
 
+history@^4.7.2:
+  version "4.7.2"
+  resolved "https://registry.yarnpkg.com/history/-/history-4.7.2.tgz#22b5c7f31633c5b8021c7f4a8a954ac139ee8d5b"
+  integrity sha512-1zkBRWW6XweO0NBcjiphtVJVsIQ+SXF29z9DVkceeaSLVMFXHool+fdCZD4spDCfZJCILPILc3bm7Bc+HRi0nA==
+  dependencies:
+    invariant "^2.2.1"
+    loose-envify "^1.2.0"
+    resolve-pathname "^2.2.0"
+    value-equal "^0.4.0"
+    warning "^3.0.0"
+
 hmac-drbg@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/hmac-drbg/-/hmac-drbg-1.0.1.tgz#d2745701025a6c775a6c545793ed502fc0c649a1"
@@ -3540,7 +3551,7 @@ hoist-non-react-statics@^1.0.5:
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
   integrity sha1-qkSM8JhtVcxAdzsXF0t90GbLfPs=
 
-hoist-non-react-statics@^2.5.5:
+hoist-non-react-statics@^2.5.0, hoist-non-react-statics@^2.5.5:
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
   integrity sha512-rqcy4pJo55FTTLWt+bU8ukscqHeE/e9KWvsOW2b/a3afxQZhwkQdT1rPPCJ0rYXdj4vNcasY8zHTH+jF/qStxw==
@@ -3815,7 +3826,7 @@ intl@^1.2.5:
   resolved "https://registry.yarnpkg.com/intl/-/intl-1.2.5.tgz#82244a2190c4e419f8371f5aa34daa3420e2abde"
   integrity sha1-giRKIZDE5Bn4Nx9ao02qNCDiq94=
 
-invariant@^2.1.1, invariant@^2.2.2:
+invariant@^2.1.1, invariant@^2.2.1, invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
@@ -4144,6 +4155,11 @@ is-wsl@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-wsl/-/is-wsl-1.1.0.tgz#1f16e4aa22b04d1336b66188a66af3c600c3a66d"
   integrity sha1-HxbkqiKwTRM2tmGIpmrzxgDDpm0=
+
+isarray@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/isarray/-/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
+  integrity sha1-ihis/Kmo9Bd+Cav8YDiTmwXR7t8=
 
 isarray@1.0.0, isarray@^1.0.0, isarray@~1.0.0:
   version "1.0.0"
@@ -4676,7 +4692,7 @@ longest@^1.0.1:
   resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
   integrity sha1-MKCy2jj3N3DoKUoNIuZiXtd9AJc=
 
-loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1, loose-envify@^1.4.0:
+loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.2.0, loose-envify@^1.3.1, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
@@ -5663,6 +5679,13 @@ path-to-regexp@0.1.7:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
   integrity sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
+
+path-to-regexp@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-1.7.0.tgz#59fde0f435badacba103a84e9d3bc64e96b9937d"
+  integrity sha1-Wf3g9DW62suhA6hOnTvGTpa5k30=
+  dependencies:
+    isarray "0.0.1"
 
 path-type@^1.0.0:
   version "1.1.0"
@@ -6667,6 +6690,31 @@ react-portal@^4.1.2:
   dependencies:
     prop-types "^15.5.8"
 
+react-router-dom@^4.2.2, react-router-dom@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.3.1.tgz#4c2619fc24c4fa87c9fd18f4fb4a43fe63fbd5c6"
+  integrity sha512-c/MlywfxDdCp7EnB7YfPMOfMD3tOtIjrQlj/CKfNMBxdmpJP8xcz5P/UAFn3JbnQCNUxsHyVVqllF9LhgVyFCA==
+  dependencies:
+    history "^4.7.2"
+    invariant "^2.2.4"
+    loose-envify "^1.3.1"
+    prop-types "^15.6.1"
+    react-router "^4.3.1"
+    warning "^4.0.1"
+
+react-router@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-4.3.1.tgz#aada4aef14c809cb2e686b05cee4742234506c4e"
+  integrity sha512-yrvL8AogDh2X42Dt9iknk4wF4V8bWREPirFfS9gLU1huk6qK41sg7Z/1S81jjTrGHxa3B8R3J6xIkDAA6CVarg==
+  dependencies:
+    history "^4.7.2"
+    hoist-non-react-statics "^2.5.0"
+    invariant "^2.2.4"
+    loose-envify "^1.3.1"
+    path-to-regexp "^1.7.0"
+    prop-types "^15.6.1"
+    warning "^4.0.1"
+
 react-syntax-highlighter@^8.0.1:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/react-syntax-highlighter/-/react-syntax-highlighter-8.1.0.tgz#59103ff17a828a27ed7c8f035ae2558f09b6b78c"
@@ -6999,6 +7047,11 @@ resolve-from@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-3.0.0.tgz#b22c7af7d9d6881bc8b6e653335eebcb0a188748"
   integrity sha1-six699nWiBvItuZTM17rywoYh0g=
+
+resolve-pathname@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/resolve-pathname/-/resolve-pathname-2.2.0.tgz#7e9ae21ed815fd63ab189adeee64dc831eefa879"
+  integrity sha512-bAFz9ld18RzJfddgrO2e/0S2O81710++chRMUxHjXOYKF6jTAMrUNZrEZ1PvV0zlhfjidm08iRPdTLPno1FuRg==
 
 resolve-url-loader@^1.6.0:
   version "1.6.1"
@@ -7766,7 +7819,7 @@ terra-abstract-modal@^1.0.0:
     react-portal "^4.1.2"
     terra-doc-template "^1.18.0"
 
-terra-action-header@^1.14.0, terra-action-header@^1.26.0:
+terra-action-header@^1.0.0, terra-action-header@^1.14.0, terra-action-header@^1.26.0:
   version "1.26.0"
   resolved "https://registry.yarnpkg.com/terra-action-header/-/terra-action-header-1.26.0.tgz#3b31ec0aedd5306537b24acf02bea7451e94be60"
   integrity sha512-/JAf3ev4a5c5DK7g/FzUAAo06eOrx+kukOHmNF6whhnAcvrYeO/IES1zpwBDwHUbXFm3v/IXIh0rOYI+xMzxNQ==
@@ -7793,7 +7846,106 @@ terra-alert@^2.31.0:
     terra-responsive-element "^3.13.0"
     terra-toggle "^2.24.0"
 
-terra-arrange@^2.27.0:
+terra-app-delegate@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/terra-app-delegate/-/terra-app-delegate-2.7.0.tgz#330b903a7381fab9f4e2e279a93b08ea131f9c06"
+  integrity sha512-SuEkphUTZKtZYVb4Ri8AnyjKY3P2gBzRwdn3MiNQP6wkuVGaXu102nNRIjet/rAcRcljjSTAwkaxgoAqp+CriA==
+  dependencies:
+    prop-types "^15.5.8"
+    terra-doc-template "^1.1.0"
+
+terra-application-header-layout@^2.18.0:
+  version "2.18.0"
+  resolved "https://registry.yarnpkg.com/terra-application-header-layout/-/terra-application-header-layout-2.18.0.tgz#98673912b9b07d2c4a425080783fdc690538287b"
+  integrity sha512-IXDS0mUBFPKjNVF7FS3nmv8fcDmflQx7eM+j0q/a4JL0cxXRTYEeKPJIQflLvyrf4fXBVVXVnwH45ndLGfg8eg==
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.5.8"
+    terra-doc-template "^1.1.0"
+    terra-responsive-element "^3.0.0"
+
+terra-application-layout@^2.19.0:
+  version "2.19.0"
+  resolved "https://registry.yarnpkg.com/terra-application-layout/-/terra-application-layout-2.19.0.tgz#61a46ad86ab85c47f6e9d0fe2de6eb07d8f0ab3c"
+  integrity sha512-aD/ax8hqeOTKqZVO33h+2d20ycpMQV0CxVT3miBECfNUiFofrt2jQCqVofJw4oFdDttiRQlxmd/rhg+etk3LEg==
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.5.8"
+    react-intl "^2.4.0"
+    react-router-dom "^4.2.2"
+    terra-action-header "^1.14.0"
+    terra-application-header-layout "^2.18.0"
+    terra-application-links "^4.17.0"
+    terra-application-menu-layout "^2.14.0"
+    terra-application-name "^2.18.0"
+    terra-application-utility "^1.20.0"
+    terra-avatar "^1.0.0"
+    terra-button "^2.2.0"
+    terra-content-container "^2.2.0"
+    terra-disclosure-manager "^2.14.0"
+    terra-doc-template "^1.1.0"
+    terra-icon "^2.2.0"
+    terra-image "^2.2.0"
+    terra-modal-manager "^3.13.0"
+    terra-navigation-layout "^2.21.0"
+    terra-navigation-side-menu "^1.15.0"
+    terra-popup "^4.16.0"
+
+terra-application-links@^4.17.0:
+  version "4.17.0"
+  resolved "https://registry.yarnpkg.com/terra-application-links/-/terra-application-links-4.17.0.tgz#1f4f5d04d74222a7836670cfa0530743ce412d2f"
+  integrity sha512-JUNybv5ZIMO4DTnm3xPPxbCEjmaPsKCz8sGXqJZMz+UOD180/272p6fkHp90DnsK5iMowKPYMdSBPQH0XUoSDA==
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.5.8"
+    resize-observer-polyfill "^1.4.1"
+    terra-doc-template "^1.1.0"
+    terra-icon "^2.0.1"
+    terra-list "^2.0.1"
+    terra-popup "^4.16.0"
+
+terra-application-menu-layout@^2.14.0:
+  version "2.14.0"
+  resolved "https://registry.yarnpkg.com/terra-application-menu-layout/-/terra-application-menu-layout-2.14.0.tgz#1c0436ce6e7c34b2b6682333b5fc2058be792fd1"
+  integrity sha512-dp9WIg41T/5dioo5kzzh9DFRS/dVDw8iMF4bBdY1jyZo6ukDIu9t1L9nuuAzuwD2x6q7Atc4CHvegc9xEM3YVA==
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.5.8"
+    terra-doc-template "^1.1.0"
+
+terra-application-name@^2.18.0:
+  version "2.18.0"
+  resolved "https://registry.yarnpkg.com/terra-application-name/-/terra-application-name-2.18.0.tgz#e30cdded77af8c109a58c79cbba4c15ed6b02efe"
+  integrity sha512-j48EQVH2Ip/X7uv4Eo0etMyfSN2PvManJq8H6gTqW+9inmyCqtsyoZmBx1LZDDOI9a1hj97HCvPkY4u0+hQLNg==
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.5.8"
+    terra-app-delegate "^2.7.0"
+    terra-application-header-layout "^2.18.0"
+    terra-application-menu-layout "^2.14.0"
+    terra-doc-template "^1.1.0"
+    terra-image "^2.0.1"
+    terra-responsive-element "^3.0.0"
+
+terra-application-utility@^1.20.0:
+  version "1.20.0"
+  resolved "https://registry.yarnpkg.com/terra-application-utility/-/terra-application-utility-1.20.0.tgz#d832c09f49b4473e029bec110eef627d2d82a314"
+  integrity sha512-wCs6hDijEhoJXuo5OBbX9PRyJ6xnHSFLo00q855Ye59PHLse23VlLAPN4fpc1R8OSD/OjlOQbuByAEwDoTFx+w==
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.5.8"
+    react-intl "^2.4.0"
+    terra-app-delegate "^2.7.0"
+    terra-application-header-layout "^2.18.0"
+    terra-application-menu-layout "^2.14.0"
+    terra-arrange "^2.1.0"
+    terra-button "^2.1.0"
+    terra-content-container "^2.1.0"
+    terra-doc-template "^1.1.0"
+    terra-icon "^2.1.0"
+    terra-image "^2.1.0"
+
+terra-arrange@^2.1.0, terra-arrange@^2.27.0:
   version "2.27.0"
   resolved "https://registry.yarnpkg.com/terra-arrange/-/terra-arrange-2.27.0.tgz#db2872ac986be7ef9402d1ebca391eebb92cff35"
   integrity sha512-KZe9LD55aax/RFN/uZjlVZHHGLvebWYWz2l6ZI2sgcQV3z+LGbaUC62sS+dYKMyIz7wUbuJbEda0t86ahEB4uQ==
@@ -7803,6 +7955,17 @@ terra-arrange@^2.27.0:
     prop-types "^15.5.8"
     terra-doc-template "^1.18.0"
     terra-icon "^2.25.0"
+
+terra-avatar@^1.0.0, terra-avatar@^1.24.0:
+  version "1.24.0"
+  resolved "https://registry.yarnpkg.com/terra-avatar/-/terra-avatar-1.24.0.tgz#0b8985a95020f8e1c8143174a2ff78f7637ec2ed"
+  integrity sha512-b/gJxLghELXOuOadd3YBOEmrA0E2vmRV4Yl92DtlqsyyJKSbLTDzRJxTy6s3QOoSo/hPI7RvJiPjiqkf6CMYxw==
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.5.8"
+    terra-doc-template "^1.18.0"
+    terra-image "^2.25.0"
+    terra-mixins "^1.19.0"
 
 terra-base@^3.10.0:
   version "3.26.0"
@@ -7825,7 +7988,7 @@ terra-button-group@^2.27.0:
     terra-doc-template "^1.18.0"
     terra-icon "^2.25.0"
 
-terra-button@^2.0.1, terra-button@^2.27.0, terra-button@^2.3.0:
+terra-button@^2.0.1, terra-button@^2.1.0, terra-button@^2.2.0, terra-button@^2.27.0, terra-button@^2.3.0:
   version "2.27.0"
   resolved "https://registry.yarnpkg.com/terra-button/-/terra-button-2.27.0.tgz#88e023633e39c9ea48b808c1c3a656e6c99ebfa0"
   integrity sha512-Aw2gfyVIFlpQ6gMF9P3kJ72uAVCZ2OWldXnxz7uzNuQDJ/uIDoEGoG6ERMQSQ7/cDOA5oqUFbonUDDRVSf8q8A==
@@ -7873,7 +8036,7 @@ terra-collapsible-menu-view@^3.24.0:
     terra-menu "^3.23.0"
     terra-mixins "^1.19.0"
 
-terra-content-container@^2.0.1, terra-content-container@^2.2.0, terra-content-container@^2.26.0:
+terra-content-container@^2.0.1, terra-content-container@^2.1.0, terra-content-container@^2.2.0, terra-content-container@^2.26.0:
   version "2.26.0"
   resolved "https://registry.yarnpkg.com/terra-content-container/-/terra-content-container-2.26.0.tgz#d322a801b4eab09ea44e3e229d3eb2dbfda6c8cf"
   integrity sha512-zKezSgPMjevCGwCPPBgU2MUJT7KDTBwkM1Ew/i4sM4yNSY2fQjkl6AGgb2HKwGmKO1r7YaqQO93Q/2i9upaSUw==
@@ -7995,7 +8158,7 @@ terra-i18n@^2.24.0, terra-i18n@^2.25.0:
     react-intl "^2.4.0"
     terra-doc-template "^1.18.0"
 
-terra-icon@^2.0.1, terra-icon@^2.25.0, terra-icon@^2.9.0:
+terra-icon@^2.0.1, terra-icon@^2.1.0, terra-icon@^2.2.0, terra-icon@^2.25.0, terra-icon@^2.9.0:
   version "2.25.0"
   resolved "https://registry.yarnpkg.com/terra-icon/-/terra-icon-2.25.0.tgz#1b9f7b88572a5486670e21954ef66f63082d84dd"
   integrity sha512-J3g34flmya2lDGmZ6pgciu3/xHSEBLcaFNwfz77EW4tM/Xq3eyfx5vG9Yw47LvnVkgBE956NmTY1+VM6slo4vA==
@@ -8004,7 +8167,31 @@ terra-icon@^2.0.1, terra-icon@^2.25.0, terra-icon@^2.9.0:
     prop-types "^15.5.8"
     terra-doc-template "^1.18.0"
 
-terra-list@^2.27.0, terra-list@^2.3.0:
+terra-image@^2.0.1, terra-image@^2.1.0, terra-image@^2.2.0, terra-image@^2.25.0:
+  version "2.25.0"
+  resolved "https://registry.yarnpkg.com/terra-image/-/terra-image-2.25.0.tgz#a549805f1cbb1b22a3464c23b926dbaa9c237572"
+  integrity sha512-sIOwgfaPYnMToQiWYpZ9iwQq1FOpF22KBKsPzIUbcC7T60qiC29mb8p2dX9UgPvA6GlAm9Rpk6ArCO65YnISSw==
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.5.8"
+    terra-doc-template "^1.18.0"
+
+terra-layout@^2.18.0:
+  version "2.18.0"
+  resolved "https://registry.yarnpkg.com/terra-layout/-/terra-layout-2.18.0.tgz#75eaf1b48080d954fa5fef430d20df07d4ac911c"
+  integrity sha512-6ZkKuzcJ9MPvYp8hGCudeA7w6WgixQfzbi/OkOnE7sFlMTlY1xSVJnLmddbZY1fgLWqfwjyGr512PfPbsoAesQ==
+  dependencies:
+    classnames "^2.2.5"
+    lodash.debounce "^4.0.8"
+    prop-types "^15.5.8"
+    terra-button "^2.0.1"
+    terra-content-container "^2.0.1"
+    terra-doc-template "^1.1.0"
+    terra-icon "^2.0.1"
+    terra-overlay "^2.0.1"
+    terra-responsive-element "^3.0.0"
+
+terra-list@^2.0.1, terra-list@^2.27.0, terra-list@^2.3.0:
   version "2.27.0"
   resolved "https://registry.yarnpkg.com/terra-list/-/terra-list-2.27.0.tgz#44862d943cbc6a090b750fb9b746bdfcc3b385ff"
   integrity sha512-dYMuMhUPfnI6RUmBXoZcOOIeatk8OKWwRB50cxDgPH1ZegT3UK0qEBkXeEgGINqLDnUhrKW80IsRDoeFBmZ+ZA==
@@ -8016,7 +8203,7 @@ terra-list@^2.27.0, terra-list@^2.3.0:
     terra-doc-template "^1.18.0"
     terra-icon "^2.25.0"
 
-terra-markdown@^2.15.0:
+terra-markdown@^2.15.0, terra-markdown@^2.6.0:
   version "2.15.0"
   resolved "https://registry.yarnpkg.com/terra-markdown/-/terra-markdown-2.15.0.tgz#acc2273fa91aa99c6c859de87c50d2a6df78949f"
   integrity sha512-P97HMc5aQ9DwOIn3euhmwFq8eh5CJh5WojwLv1MIhWGJlWhVlps/yim+5z1B3ndSq6j8nkVfWOhnQI3STznQzw==
@@ -8060,7 +8247,47 @@ terra-modal-manager@^3.13.0:
     terra-responsive-element "^3.0.0"
     terra-slide-group "^2.0.1"
 
-terra-popup@^4.0.0:
+terra-navigation-layout@^2.21.0:
+  version "2.21.0"
+  resolved "https://registry.yarnpkg.com/terra-navigation-layout/-/terra-navigation-layout-2.21.0.tgz#2cf0db46cf6b48b30e54c449d3cecb2e8fb5890c"
+  integrity sha512-pLASSLIIGW1ram12CtiWlJ+9Og8Hg/SkzajTldK4vHecHZeN2Xwh4ca3ySym7C6CQxUumLfssnLJwq/Z2LTQwA==
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.5.8"
+    terra-button "^2.0.1"
+    terra-doc-template "^1.1.0"
+    terra-icon "^2.0.1"
+    terra-layout "^2.18.0"
+    terra-markdown "^2.6.0"
+    terra-responsive-element "^3.0.0"
+    terra-toggle-button "^2.0.1"
+
+terra-navigation-side-menu@^1.15.0:
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/terra-navigation-side-menu/-/terra-navigation-side-menu-1.15.0.tgz#d8c1dc9e56de76a7169cddbddc0df210e6a1e108"
+  integrity sha512-y606Y4TlNfwoscn81rz7G1WPZXG85ULIogkChTs0p1QS3eLP5RA+Veohlu41Hf3+FvGt+yojXzfT2kM5T/ZZxQ==
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.5.8"
+    terra-action-header "^1.0.0"
+    terra-content-container "^2.0.1"
+    terra-doc-template "^1.1.0"
+    terra-icon "^2.0.1"
+    terra-list "^2.0.1"
+
+terra-overlay@^2.0.1:
+  version "2.30.0"
+  resolved "https://registry.yarnpkg.com/terra-overlay/-/terra-overlay-2.30.0.tgz#f9b9f48f2cd0e43739d98a24b0a4146dd9c0dd5d"
+  integrity sha512-wSK7vC+4IyWRXbkVy7vCH1oU2gwz1S61+Gk9vCzqiJoUQItQYAC7elCTEvF5C+ubXPRy6oSgFMsRt0vaiv/r9g==
+  dependencies:
+    classnames "^2.2.5"
+    focus-trap-react "^4.0.1"
+    prop-types "^15.5.8"
+    terra-button "^2.27.0"
+    terra-doc-template "^1.18.0"
+    terra-icon "^2.25.0"
+
+terra-popup@^4.0.0, terra-popup@^4.16.0:
   version "4.16.0"
   resolved "https://registry.yarnpkg.com/terra-popup/-/terra-popup-4.16.0.tgz#0abbcf70917488aa46caf0692cff8447464827b0"
   integrity sha512-Xlmk8xOu7EI3t95hh9uGwmtKEqb9vV4MmCMvDRbY1HBx0PbWljWTALx6chTSPO/of3MQMKWnZ6JG7hEP2e44qw==
@@ -8129,6 +8356,18 @@ terra-text@^2.25.0:
     terra-doc-template "^1.18.0"
     terra-heading "^2.25.0"
     terra-markdown "^2.15.0"
+
+terra-toggle-button@^2.0.1:
+  version "2.28.0"
+  resolved "https://registry.yarnpkg.com/terra-toggle-button/-/terra-toggle-button-2.28.0.tgz#c267a40bb8146d5f48805f470653deae342e69b5"
+  integrity sha512-ITHZtf8zzuLsoMbBLLhYzcN0vzXj8HtFipruTVX1dOsBE6OEyFhYIHODSXn6QEbH4Qfv+U6S9GmzbYUEWaUFUQ==
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.5.8"
+    terra-button "^2.27.0"
+    terra-doc-template "^1.18.0"
+    terra-icon "^2.25.0"
+    terra-toggle "^2.24.0"
 
 terra-toggle@^2.24.0:
   version "2.24.0"
@@ -8469,6 +8708,11 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
+value-equal@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/value-equal/-/value-equal-0.4.0.tgz#c5bdd2f54ee093c04839d71ce2e4758a6890abc7"
+  integrity sha512-x+cYdNnaA3CxvMaTX0INdTCN8m8aF2uY9BvEqmxuYp8bL09cs/kWVQPVGcA35fMktdOsP69IgU7wFj/61dJHEw==
+
 vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
@@ -8499,6 +8743,20 @@ vm-browserify@0.0.4:
   integrity sha1-XX6kW7755Kb/ZflUOOCofDV9WnM=
   dependencies:
     indexof "0.0.1"
+
+warning@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/warning/-/warning-3.0.0.tgz#32e5377cb572de4ab04753bdf8821c01ed605b7c"
+  integrity sha1-MuU3fLVy3kqwR1O9+IIcAe1gW3w=
+  dependencies:
+    loose-envify "^1.0.0"
+
+warning@^4.0.1:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/warning/-/warning-4.0.2.tgz#aa6876480872116fa3e11d434b0d0d8d91e44607"
+  integrity sha512-wbTp09q/9C+jJn4KKJfJfoS6VleK/Dti0yqWSm6KMvJ4MRCXFQNapHuJXutJIrWV0Cf4AhTdeIe4qdKHR1+Hug==
+  dependencies:
+    loose-envify "^1.0.0"
 
 watchpack@^1.4.0:
   version "1.6.0"

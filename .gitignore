@@ -28,7 +28,7 @@
 .DS_Store
 
 # ignore auto-generated locales
-app/javascript/i18n/*.js
+translations/*.js
 aggregated-translations/*.js
 # ignore pow stuff
 /.powrc

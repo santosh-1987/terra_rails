@@ -4,6 +4,7 @@ import { I18nProvider, i18nLoader } from 'terra-i18n';
 import ActionHeader from 'terra-action-header/lib/ActionHeader'
 import Button from 'terra-button/lib/Button'
 import Textarea from 'terra-form-textarea'
+import Layout from "./Layout.jsx"
 
 class Home extends React.Component {
     constructor(props) {
@@ -30,10 +31,7 @@ class Home extends React.Component {
         return (
             <I18nProvider locale={this.state.locale} messages={this.state.messages}>
                 <Base>
-                    <br />
-                    <ActionHeader title="SQL Query Tool"/>
-                    <br />
-                    <ButtonVariant/>
+                    <Layout />
                 </Base>
             </I18nProvider>
         );
