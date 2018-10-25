@@ -1,0 +1,11 @@
+---
+en-GB:
+  action: Action
+  actions: Actions
+  Terra:
+    Overlay:
+      loading: Loading...
+    actionHeader:
+       close: Close
+    searchField:
+      search: Search

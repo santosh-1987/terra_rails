@@ -1,0 +1,19 @@
+---
+sv-SE:
+  action: Åtgärd
+  actions: Åtgärd
+  Terra:
+    Overlay:
+      loading: Läser in …
+    actionHeader:
+      close: Close
+    searchField:
+      search: Sök
+    Clinical:
+      ActionHeader:
+        back: Tillbaka
+        close: Stäng
+        maximize: Maximera
+        minimize: Minimera
+        next: Nästa
+        previous: Föregående
